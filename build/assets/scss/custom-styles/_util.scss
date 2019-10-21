@@ -1,0 +1,62 @@
+@include breakpoint(xs) {
+  .no-margin\@xs { margin: 0 !important; }
+}
+
+@include breakpoint(sm) {
+  .no-margin\@sm { margin: 0 !important; }
+}
+
+@include breakpoint(md) {
+  .no-margin\@md { margin: 0 !important; }
+}
+
+@include breakpoint(lg) {
+  .no-margin\@lg { margin: 0 !important; }
+}
+
+@include breakpoint(xl, "not all") {
+  .no-margin\@xl { margin: 0 !important; }
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.border-box {
+  box-sizing: border-box;
+}
+
+.video-play__wrapper {
+  display: inline-block;
+  position: relative;
+}
+
+.video-play {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Ctitle%3Eplus%3C%2Ftitle%3E%3Cpath%20style%3D%22fill%3A%23ffffff%3B%22%20d%3D%22M12%2C22.3C6.3%2C22.3%2C1.7%2C17.7%2C1.7%2C12S6.3%2C1.7%2C12%2C1.7S22.3%2C6.3%2C22.3%2C12S17.7%2C22.3%2C12%2C22.3z%20M12%2C2.7c-5.1%2C0-9.3%2C4.2-9.3%2C9.3s4.2%2C9.3%2C9.3%2C9.3s9.3-4.2%2C9.3-9.3S17.1%2C2.7%2C12%2C2.7z%22%2F%3E%3Cpath%20style%3D%22fill%3A%2334b233%3B%22%20d%3D%22M9.9%2C16.2c-0.1%2C0-0.2%2C0-0.3-0.1c-0.2-0.1-0.2-0.3-0.2-0.4V8.3c0-0.2%2C0.1-0.3%2C0.2-0.4c0.2-0.1%2C0.3-0.1%2C0.5%2C0l6.6%2C3.7c0.2%2C0.1%2C0.3%2C0.3%2C0.3%2C0.4s-0.1%2C0.3-0.3%2C0.4l-6.6%2C3.7C10%2C16.2%2C9.9%2C16.2%2C9.9%2C16.2z%22%2F%3E%3C%2Fsvg%3E);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 4em;
+  @include transition(background-size);
+
+  &:hover {
+    background-size: 4.5em;
+  }
+}
+
+.youtube__wrapper {
+  position: relative;
+  padding-top: 56%;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}

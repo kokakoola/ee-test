@@ -1,0 +1,42 @@
+       <!-- Header -->
+    <e-header>
+    <header slot="desktop-header">
+        <e-section background-color="light" header>
+            <e-header-block is-topbar>
+                <a class="nav__link" slot="left">Eraklient</a>
+                <a class="nav__link" slot="left">Äriklient</a>
+                <a class="nav__link" slot="right">Ettevõttest</a>
+                <e-dropdown slot="right" type="text" text="EE" align="right">
+                    <div>EN</div>
+                    <div>RU</div>
+                    <div>EE</div>
+                </e-dropdown>
+            </e-header-block>
+        </e-section>
+        <e-section background-image="build/assets/images/header.jpg" header>
+            <e-header-block is-header>
+                <e-logo slot="left" logo="energia-horizontal-white"></e-logo>
+                <e-button has-icon slot="right" color="secondary" size="sm">
+                    <e-icon icon="person"></e-icon>
+                    <span>Iseteenindus</span>
+                </e-button>
+                <div slot="right" class="topbar-separator"></div>
+            </e-header-block>
+        </e-section>
+        <e-section header>
+            <e-navbar>
+                <e-nav>
+                    <e-icon icon="home" size="xs" slot="nav-icon" />
+                </e-nav>
+                <e-nav slot="mobile-item" text="Taastuvenergia"></e-nav>
+                <e-nav slot="mobile-item" text="Energia tooted" has-dropdown>
+                    <a>1</a>
+                    <a>2</a>
+                    <a>3</a>
+                </e-nav>
+                <e-nav slot="mobile-item" text="Elekter"></e-nav>
+                <e-nav slot="mobile-item" text="Abiinfo"></e-nav>
+            </e-navbar>
+        </e-section>
+    </header>
+  </e-header>

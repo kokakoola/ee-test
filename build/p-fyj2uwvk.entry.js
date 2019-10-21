@@ -1,0 +1,1 @@
+import{r,h as s}from"./p-617dbf5e.js";class t{constructor(s){r(this,s)}render(){return s("ul",{class:"navbar"},s("slot",null))}static get style(){return".navbar{list-style:none;padding:0;margin:0 0 0 var(--space-md);display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex}"}}export{t as e_navbar};

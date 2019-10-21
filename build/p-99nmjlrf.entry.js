@@ -1,0 +1,1 @@
+import{r,h as o}from"./p-617dbf5e.js";class s{constructor(o){r(this,o)}render(){return o("div",{class:"accordion"},o("slot",null))}static get style(){return"::slotted(*){border-bottom:1px solid var(--color-white-dark)}::slotted(:last-child){border-bottom:none}"}}export{s as e_accordion};
